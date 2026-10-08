@@ -1,0 +1,8 @@
+{
+  "name": "lice",
+  "origin": "deveval",
+  "source_url": "https://github.com/licenses/lice (via DevEval)",
+  "license": "BSD-3-Clause",
+  "domain": "Utilities",
+  "notes": "tests-core/conftest.py changes CWD to lice/ because lice/core.py reads ./templates/ at module-import time with a relative path."
+}

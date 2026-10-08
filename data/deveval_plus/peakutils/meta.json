@@ -1,0 +1,8 @@
+{
+  "name": "peakutils",
+  "origin": "github",
+  "source_url": "https://bitbucket.org/lucashnegri/peakutils",
+  "license": "MIT",
+  "domain": "Signal Processing",
+  "notes": "1-D peak detection + baseline estimation + Gaussian fit. Requires numpy + scipy. tests-peak/conftest.py chdirs to fixtures (baseline/, exp/, noise/)."
+}

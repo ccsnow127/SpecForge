@@ -1,0 +1,105 @@
+{
+  "description": "DevEval+ benchmark index. Each entry maps a module key to its source file and test directory.",
+  "modules": {
+    "arxiv_digest/query_arxiv": {
+      "source": "arxiv_digest/query_arxiv.py",
+      "test_dir": "arxiv_digest/tests-query_arxiv",
+      "origin": "deveval"
+    },
+    "chakin/downloader": {
+      "source": "chakin/downloader.py",
+      "test_dir": "chakin/tests-downloader",
+      "origin": "deveval"
+    },
+    "geotext/geotext": {
+      "source": "geotext/geotext.py",
+      "test_dir": "geotext/tests-geotext",
+      "origin": "deveval"
+    },
+    "hone_pkg/hone": {
+      "source": "hone_pkg/hone.py",
+      "test_dir": "hone_pkg/tests-hone",
+      "origin": "deveval"
+    },
+    "hybrid_images/hybrid": {
+      "source": "hybrid_images/hybrid.py",
+      "test_dir": "hybrid_images/tests-hybrid",
+      "origin": "deveval"
+    },
+    "lice/core": {
+      "source": "lice/core.py",
+      "test_dir": "lice/tests-core",
+      "origin": "deveval"
+    },
+    "pso/pso_simple": {
+      "source": "pso/pso_simple.py",
+      "test_dir": "pso/tests-pso_simple",
+      "origin": "deveval"
+    },
+    "readtime_result/result": {
+      "source": "readtime_result/result.py",
+      "test_dir": "readtime_result/tests-result",
+      "origin": "deveval"
+    },
+    "stocktrends/indicators": {
+      "source": "stocktrends/indicators.py",
+      "test_dir": "stocktrends/tests-indicators",
+      "origin": "deveval"
+    },
+    "textcnn/modeling": {
+      "source": "textcnn/modeling.py",
+      "test_dir": "textcnn/tests-modeling",
+      "origin": "deveval"
+    },
+    "abrvalg/interpreter": {
+      "source": "abrvalg/interpreter.py",
+      "test_dir": "abrvalg/tests-interpreter",
+      "origin": "github"
+    },
+    "abrvalg/lexer": {
+      "source": "abrvalg/lexer.py",
+      "test_dir": "abrvalg/tests-lexer",
+      "origin": "github"
+    },
+    "abrvalg/parser": {
+      "source": "abrvalg/parser.py",
+      "test_dir": "abrvalg/tests-parser",
+      "origin": "github"
+    },
+    "croniter/croniter": {
+      "source": "croniter/croniter.py",
+      "test_dir": "croniter/tests-croniter",
+      "origin": "github"
+    },
+    "patternpy/tradingpatterns": {
+      "source": "patternpy/tradingpatterns.py",
+      "test_dir": "patternpy/tests-tradingpatterns",
+      "origin": "github"
+    },
+    "peakutils/peak": {
+      "source": "peakutils/peak.py",
+      "test_dir": "peakutils/tests-peak",
+      "origin": "github"
+    },
+    "pyfaidx/pyfaidx": {
+      "source": "pyfaidx/pyfaidx.py",
+      "test_dir": "pyfaidx/tests-pyfaidx",
+      "origin": "github"
+    },
+    "schedule_pkg/schedule": {
+      "source": "schedule_pkg/schedule.py",
+      "test_dir": "schedule_pkg/tests-schedule",
+      "origin": "github"
+    },
+    "schema_pkg/schema": {
+      "source": "schema_pkg/schema.py",
+      "test_dir": "schema_pkg/tests-schema",
+      "origin": "github"
+    },
+    "streaming_indicators/streaming_indicators": {
+      "source": "streaming_indicators/streaming_indicators.py",
+      "test_dir": "streaming_indicators/tests-streaming_indicators",
+      "origin": "github"
+    }
+  }
+}

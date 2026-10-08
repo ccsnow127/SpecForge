@@ -1,0 +1,8 @@
+{
+  "name": "schema_pkg",
+  "origin": "github",
+  "source_url": "https://github.com/keleshev/schema",
+  "license": "MIT",
+  "domain": "Data Validation",
+  "notes": "Python validation library (github.com/keleshev/schema v0.7.8). tests-schema/conftest.py chdirs to schema_pkg/ so that test_validate_file / test_complex (which open LICENSE-MIT by relative path) work."
+}

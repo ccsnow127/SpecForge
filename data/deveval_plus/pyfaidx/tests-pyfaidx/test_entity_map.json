@@ -1,0 +1,14 @@
+{
+  "test_negate": "Sequence.__neg__",
+  "test_negate_metadata": "Sequence.__neg__",
+  "test_seq_invalid": "Sequence",
+  "test_integer_index": "Sequence",
+  "test_slice_index": "Sequence.__getitem__",
+  "test_reverse_complement_slice_coordinates": "complement",
+  "test_reverse_complement_slice_coordinates_middle": "complement",
+  "test_reverse_complement_slice_coordinates_end": "complement",
+  "test_comp_invalid": "Sequence",
+  "test_check_coordinates": "Sequence",
+  "test_comp_valid": "Sequence",
+  "test_comp_empty": "Sequence"
+}

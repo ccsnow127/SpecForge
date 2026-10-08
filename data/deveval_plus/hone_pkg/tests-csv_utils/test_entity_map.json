@@ -1,0 +1,10 @@
+{
+  "test_init_stores_filepath": "CSVUtils.__init__",
+  "test_init_none_filepath": "CSVUtils.__init__",
+  "test_basic_columns": "CSVUtils.get_column_names",
+  "test_two_columns": "CSVUtils.get_column_names",
+  "test_basic_rows": "CSVUtils.get_data_rows",
+  "test_single_row": "CSVUtils.get_data_rows",
+  "test_excludes_header": "CSVUtils.get_data_rows",
+  "test_context_manager": "CSVUtils.open_csv"
+}

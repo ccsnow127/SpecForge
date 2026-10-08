@@ -1,0 +1,28 @@
+Refine documentation for **{entity}** so a coding agent can reimplement it correctly.
+
+## Reference Implementation
+```python
+{source_code}
+```
+
+## Current Documentation
+{current_documentation}
+
+## Hypothesis (priority fix)
+{hypothesis}
+
+## Context (test failures)
+{error_messages}
+
+## Rules
+1. The documentation must be COMPLETE — a coding agent reading ONLY this documentation must be able to reimplement the method with behavior matching the reference. Specify all: initialization, loop structure, conditions, formulas, edge cases, and return values.
+2. The hypothesis tells you where the current documentation is MOST wrong. Fix that part with extra precision, but do NOT neglect other parts.
+3. Preserve any existing correct details from the current documentation.
+4. Write API-level documentation, NOT pseudocode or line-by-line algorithm transcriptions.
+5. Do NOT embed code snippets or fenced code blocks for functions/methods — use concise natural language.
+   EXCEPTION: for `## Variable:` entities, always include the exact value in a fenced code block.
+6. Use heading format: `### Method: ClassName.method_name` or `## Function: func_name`.
+
+<documentation>
+[Complete documentation that enables reimplementation]
+</documentation>

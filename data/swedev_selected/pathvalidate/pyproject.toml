@@ -1,0 +1,103 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=64",
+  "setuptools_scm>=7,<8; python_version<'3.8'",
+  "setuptools_scm>=8; python_version>='3.8'",
+]
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "no-local-version"
+
+[tool.black]
+exclude = '''
+/(
+      \.eggs
+    | \.git
+    | \.mypy_cache
+    | \.tox
+    | \.pytype
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+)/
+| docs/conf.py
+'''
+line-length = 100
+target-version = ['py36', 'py37', 'py38', 'py39', 'py310', 'py311', 'py312', 'py313']
+
+[tool.isort]
+include_trailing_comma = true
+known_third_party = [
+  'allpairspy',
+  'path',
+  'pytest',
+  'readmemaker',
+  'sphinx_rtd_theme',
+]
+line_length = 100
+lines_after_imports = 2
+multi_line_output = 3
+skip_glob = [
+  '*/.eggs/*',
+  '*/.pytype/*',
+  '*/.tox/*',
+]
+
+[tool.coverage.run]
+branch = true
+source = ['pathvalidate']
+
+[tool.coverage.report]
+exclude_lines = [
+  'except ImportError',
+  'raise NotImplementedError',
+  'pass',
+  'ABCmeta',
+  'abstractmethod',
+  'warnings.warn',
+]
+precision = 1
+show_missing = true
+
+[tool.pyright]
+exclude = [
+    "**/node_modules",
+    "**/__pycache__",
+    ".tox",
+    ".venv",
+    "_build",
+    "_sandbox",
+    "build",
+    "dist"
+]
+pythonVersion = "3.7"
+
+[tool.pytest.ini_options]
+testpaths = [
+  "test",
+]
+
+md_report = true
+md_report_color = "auto"
+md_report_verbose = 1
+md_report_exclude_outcomes = [
+  "passed",
+]
+
+discord_verbose = 1
+
+[tool.ruff]
+line-length = 100
+target-version = "py37"
+exclude = [
+    ".eggs/",
+    ".tox/",
+    "_sandbox/*",
+    "build/",
+    "docs/conf.py",
+    "examples/pathvalidate_examples.py"
+]

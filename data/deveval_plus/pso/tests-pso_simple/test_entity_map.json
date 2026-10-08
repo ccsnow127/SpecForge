@@ -1,0 +1,20 @@
+{
+  "test_Particle___init___position": "Particle.__init__",
+  "test_Particle___init___velocity_length": "Particle.__init__",
+  "test_Particle___init___defaults": "Particle.__init__",
+  "test_Particle___init___velocity_range": "Particle.__init__",
+  "test_Particle_evaluate_updates_error": "Particle.evaluate",
+  "test_Particle_evaluate_updates_best_on_first_call": "Particle.evaluate",
+  "test_Particle_evaluate_updates_best_on_improvement": "Particle.evaluate",
+  "test_Particle_evaluate_no_update_on_worse": "Particle.evaluate",
+  "test_Particle_update_velocity_changes_velocity": "Particle.update_velocity",
+  "test_Particle_update_velocity_length_preserved": "Particle.update_velocity",
+  "test_Particle_update_velocity_at_optimum": "Particle.update_velocity",
+  "test_Particle_update_position_basic": "Particle.update_position",
+  "test_Particle_update_position_clamp_upper": "Particle.update_position",
+  "test_Particle_update_position_clamp_lower": "Particle.update_position",
+  "test_minimize_returns_tuple": "minimize",
+  "test_minimize_converges": "minimize",
+  "test_minimize_respects_bounds": "minimize",
+  "test_minimize_single_dimension": "minimize"
+}

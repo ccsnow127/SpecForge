@@ -1,0 +1,67 @@
+Example format for Python:
+
+```markdown
+# ProjectName Baseline Documentation
+
+## Module: modulename
+One sentence describing the module.
+
+---
+
+## Variable: BuiltinFunction
+A named tuple with two fields: `params` (a list of parameter name strings) and `body` (a callable that implements the function). Created using `collections.namedtuple`.
+
+---
+
+## Class: MyClass
+
+**Interface:**
+\```python
+class MyClass:
+    field1: type
+    field2: type
+
+    CONSTANT: int = 0
+
+    def __init__(self, param: type)
+    def some_method(self, x: float) -> int
+\```
+
+### Method: MyClass.__init__
+Stores the input parameter and initializes internal state.
+
+### Method: MyClass.some_method
+Computes a value based on x. Returns the rounded result as an integer.
+
+---
+
+## Function: some_function
+Description of standalone function.
+
+---
+
+## Variable: evaluators
+\```python
+evaluators = {
+    ast.Number: lambda node, env: node.value,
+    ast.String: lambda node, env: node.value,
+    ast.Array: eval_array,
+    ast.Identifier: eval_identifier,
+    ast.BinaryOperator: eval_binary_operator,
+    ast.UnaryOperator: eval_unary_operator,
+    ast.SubscriptOperator: eval_getitem,
+    ast.Assignment: eval_assignment,
+    ast.Condition: eval_condition,
+    ast.Match: eval_match,
+    ast.WhileLoop: eval_while_loop,
+    ast.ForLoop: eval_for_loop,
+    ast.Function: eval_function_declaration,
+    ast.Call: eval_call,
+    ast.Return: eval_return,
+}
+\```
+Dispatch dictionary mapping AST node **type objects** (not strings) to handler functions.
+Must be defined AFTER all handler functions it references.
+
+---
+```

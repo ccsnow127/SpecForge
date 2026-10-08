@@ -1,0 +1,8 @@
+{
+  "name": "pyfaidx",
+  "origin": "github",
+  "source_url": "https://github.com/mdshw5/pyfaidx",
+  "license": "BSD-3-Clause",
+  "domain": "Bioinformatics",
+  "notes": "DNA/RNA Sequence class with reverse-complement and slicing. Tests exercise the Sequence class via string-level inputs without requiring external FASTA fixtures."
+}
