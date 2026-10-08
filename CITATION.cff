@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use SpecForge, please cite the paper below."
+title: "SpecForge"
+type: software
+repository-code: "https://github.com/ccsnow127/SpecForge"
+license: MIT
+authors:
+  - family-names: Cheng
+    given-names: Yutong
+  - family-names: Chen
+    given-names: Haifeng
+  - family-names: Gao
+    given-names: Peng
+  - family-names: Cheng
+    given-names: Wei
+preferred-citation:
+  type: conference-paper
+  title: "SpecForge: Agent-Oriented Code Documentation Optimization via Multi-Frontier Tree Search"
+  authors:
+    - family-names: Cheng
+      given-names: Yutong
+    - family-names: Chen
+      given-names: Haifeng
+    - family-names: Gao
+      given-names: Peng
+    - family-names: Cheng
+      given-names: Wei
+  collection-title: "Advances in Neural Information Processing Systems (NeurIPS)"
+  year: 2026

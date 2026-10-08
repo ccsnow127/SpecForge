@@ -203,6 +203,19 @@ Two additional datasets support the downstream experiments above:
 - `data/deveval_plus_java/` — 16 Java test harnesses (Maven projects) for the **cross-language translation** task. Each module's `src/test/java/` contains JUnit 5 tests that mirror the Python ground-truth, and `api_stub.java` defines the API surface the generated Java code must satisfy.
 - `data/swedev_selected/` — 10 Python packages and 27 PRD instances (15 easy + 12 hard) for the **new-feature implementation** task. For each package, `tests/` contains the test suite executed against the LLM-generated `main.py`, and `prds/{easy,hard}/` contains the per-instance PRDs.
 
+## Citation
+
+If you use SpecForge in your research, please cite our NeurIPS 2026 paper:
+
+```bibtex
+@inproceedings{cheng2026specforge,
+  title     = {SpecForge: Agent-Oriented Code Documentation Optimization via Multi-Frontier Tree Search},
+  author    = {Cheng, Yutong and Chen, Haifeng and Gao, Peng and Cheng, Wei},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2026}
+}
+```
+
 ## License
 
 MIT (see `LICENSE`). Each benchmark module retains its original license;
