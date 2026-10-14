@@ -1,0 +1,6 @@
+.
+ddt<2
+flake8
+flask
+pytest-cov<4
+tornado

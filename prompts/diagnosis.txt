@@ -1,0 +1,27 @@
+A coding agent produced buggy code from the current documentation. Analyze ALL bugs and propose a documentation rewrite to fix them.
+
+## Target Entity: **{entity}**
+
+## Reference Implementation
+```python
+{source_code}
+```
+
+## Generated Code (has bugs)
+```python
+{generated_code}
+```
+
+## Current Documentation
+{current_documentation}
+
+## Test Failures
+{error_messages}
+
+## Instructions
+
+Compare the reference implementation against the generated code. Identify all behavioral divergences that cause the test failures, then write a hypothesis describing what the documentation should say to prevent these bugs.
+
+IMPORTANT: Output ONLY the raw XML tag below. No markdown code blocks, no explanation before or after.
+
+<hypothesis>The documentation should ...</hypothesis>

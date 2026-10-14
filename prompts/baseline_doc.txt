@@ -1,0 +1,50 @@
+You are a documentation generator. Your task is to produce a structured baseline documentation file from source code.
+
+## Source Code ({language})
+```{language}
+{source_code}
+```
+
+## Output Format Requirements
+
+Your output must follow this EXACT format. This is critical — downstream parsers depend on these heading patterns.
+
+{example_format}
+
+## Rules
+
+1. Start with a top-level heading: `# <ProjectName> Baseline Documentation`
+2. Then `## Module: <ModuleName>` with a one-sentence module description, followed by `---`
+3. Document all entities in the SAME ORDER as they appear in the source code. This includes
+   module-level variables (namedtuple definitions, global dicts, type aliases), classes, and functions.
+   The coding agent will generate code following the documentation order, so correct ordering
+   prevents forward-reference errors.
+4. For module-level variables and type definitions (e.g., namedtuple definitions, global dicts,
+   dispatch tables), use `## Variable: variableName`. Describe the variable's type, purpose, and
+   structure in natural language. Do NOT include fenced code blocks with exact values — describe
+   what the variable contains and how it is used instead.
+5. For each class/interface, use `## Class: ClassName` (EXACTLY this format — `## Class:` followed by the class name)
+6. Under each class, include an `**Interface:**` block with a fenced code block showing:
+   - Class/interface signature (with extends/implements if applicable)
+   - All fields and constants
+   - All method signatures (no bodies)
+7. For each method, use `### Method: ClassName.methodName` (EXACTLY this format — dot-qualified name)
+   - For constructors: use `### Method: ClassName.__init__`
+   - For properties: use `### Method: ClassName.propName (property)`
+8. Each method section should describe:
+   - What the method does (behavior, not implementation)
+   - Algorithm overview (if non-trivial)
+   - Edge cases and boundary conditions
+   - Return value description
+9. Separate each class section with `---`
+10. Do NOT include actual implementation code in method descriptions — describe behavior only
+11. For standalone functions (not in a class), use `## Function: functionName`
+12. Cover ALL public classes and ALL public methods — do not skip any
+13. For each function/method, explicitly mention the attribute names it accesses on its parameters.
+   For example, if a function accesses `node.left`, `node.operator`, `node.right`, state this clearly
+   in the documentation rather than just saying "evaluates the binary operation".
+14. Write API-level documentation, NOT pseudocode or line-by-line algorithm transcriptions.
+
+## Output
+
+Generate ONLY the markdown documentation, no explanations or commentary:

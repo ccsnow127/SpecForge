@@ -1,0 +1,12 @@
+{
+  "name": "abrvalg",
+  "origin": "github",
+  "source_url": "https://github.com/akrylysov/abrvalg",
+  "license": "MIT",
+  "submodules": {
+    "interpreter": "Programming Languages",
+    "lexer": "Compilers",
+    "parser": "Utilities"
+  },
+  "notes": "Tree-walking interpreter for a small language. AST and error utilities (ast.py, errors.py, utils.py, ttt.py) are internal dependencies of the three submodules."
+}

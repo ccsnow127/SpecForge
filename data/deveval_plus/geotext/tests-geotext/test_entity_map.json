@@ -1,0 +1,6 @@
+{
+  "test_cities": "GeoText.__init__",
+  "test_countries": "GeoText.__init__",
+  "test_country_mentions": "GeoText.__init__",
+  "test_nationalities": "GeoText.__init__"
+}

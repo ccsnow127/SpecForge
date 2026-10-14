@@ -1,0 +1,7 @@
+{
+  "name": "schedule_pkg",
+  "origin": "github",
+  "source_url": "https://github.com/dbader/schedule",
+  "license": "MIT",
+  "domain": "Scheduling"
+}

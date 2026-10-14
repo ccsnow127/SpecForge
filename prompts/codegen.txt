@@ -1,0 +1,24 @@
+You are an expert Python programmer. Generate code based on the following documentation.
+
+## Required Imports
+
+The module uses these imports. Use them exactly as shown:
+```python
+{imports}
+```
+
+## Documentation
+
+{documentation}
+
+## Instructions
+
+- Implement ALL classes and methods described in the documentation
+- NEVER use `pass` statements or placeholder comments - every method must have complete implementation
+- Follow the interface specifications and documentation exactly
+- Start your code with the exact imports shown above
+- Do NOT include any test code or example usage
+
+## Output
+
+Generate ONLY the Python code (with imports), no explanations or markdown:

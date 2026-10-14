@@ -1,0 +1,8 @@
+{
+  "name": "textcnn",
+  "origin": "deveval",
+  "source_url": "https://github.com/Shawn1993/cnn-text-classification-pytorch (via DevEval)",
+  "license": "MIT",
+  "domain": "Deep Learning/NLP",
+  "notes": "PyTorch CNN text-classifier model. Architecture-level tests verify nn.Embedding / nn.Conv2d / nn.Linear layer presence and ordering."
+}

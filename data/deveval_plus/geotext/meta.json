@@ -1,0 +1,8 @@
+{
+  "name": "geotext",
+  "origin": "deveval",
+  "source_url": "https://github.com/elyase/geotext (via DevEval)",
+  "license": "MIT",
+  "domain": "Geography/NLP",
+  "notes": "Extracts cities, countries, and nationalities from free text. Reference data files (cities15000.txt, countryInfo.txt, nationalities.txt, citypatches.txt) ship in data_file/. Tests exercise GeoText.__init__ which internally calls build_index() at class-definition time."
+}

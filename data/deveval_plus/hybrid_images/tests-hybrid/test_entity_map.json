@@ -1,0 +1,22 @@
+{
+  "test_identity_kernel_grayscale": "cross_correlation_2d",
+  "test_output_shape_grayscale": "cross_correlation_2d",
+  "test_output_shape_rgb": "cross_correlation_2d",
+  "test_uniform_kernel_sums": "cross_correlation_2d",
+  "test_symmetric_kernel_same_as_correlation": "convolve_2d",
+  "test_output_shape[TestConvolve2d]": "convolve_2d",
+  "test_non_symmetric_kernel_differs": "convolve_2d",
+  "test_kernel_shape": "gaussian_blur_kernel_2d",
+  "test_kernel_sums_to_one": "gaussian_blur_kernel_2d",
+  "test_center_is_max": "gaussian_blur_kernel_2d",
+  "test_non_square_kernel": "gaussian_blur_kernel_2d",
+  "test_larger_sigma_wider_spread": "gaussian_blur_kernel_2d",
+  "test_output_shape[TestLowPass]": "low_pass",
+  "test_uniform_image_unchanged": "low_pass",
+  "test_output_shape[TestHighPass]": "high_pass",
+  "test_uniform_image_near_zero": "high_pass",
+  "test_output_shape[TestCreateHybridImage]": "create_hybrid_image",
+  "test_output_dtype_uint8": "create_hybrid_image",
+  "test_output_clipped": "create_hybrid_image",
+  "test_case_insensitive_high_low": "create_hybrid_image"
+}

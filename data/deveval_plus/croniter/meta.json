@@ -1,0 +1,8 @@
+{
+  "name": "croniter",
+  "origin": "github",
+  "source_url": "https://github.com/kiorky/croniter",
+  "license": "MIT",
+  "domain": "Scheduling",
+  "notes": "Cron-expression parser & next/prev trigger computation (github.com/kiorky/croniter v6.2.2). Runtime deps: python-dateutil, pytz. tests-croniter/conftest.py synthesizes the `croniter.tests` sub-package (needed by test imports) from the tests dir."
+}

@@ -1,0 +1,8 @@
+{
+  "name": "chakin",
+  "origin": "deveval",
+  "source_url": "https://github.com/chakki-works/chakin (via DevEval)",
+  "license": "MIT",
+  "domain": "NLP/Embeddings",
+  "notes": "Tests mock `urlretrieve` to avoid network I/O. Only `download` is directly tested."
+}

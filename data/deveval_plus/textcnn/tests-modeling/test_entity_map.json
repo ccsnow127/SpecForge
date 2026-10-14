@@ -1,0 +1,4 @@
+{
+  "test_layers": "TextCNN.__init__",
+  "test_ordering": "TextCNN.__init__"
+}

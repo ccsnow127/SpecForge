@@ -1,0 +1,23 @@
+# SpecForge default configuration. Override on the CLI with --budget / --width / etc.
+
+search:
+  budget: 50            # Total LLM-call budget B
+  width: 3              # Width W: max attempts per entity at any node
+  use_pareto_archive: true
+  use_bandit: true
+
+bandit:
+  gamma: 0.95           # D-UCB discount factor (~20-step effective window)
+
+llm:
+  hint_model: gpt-4o    # Model for hypothesis + prescription
+  code_model: gpt-4o    # Model for code generation
+  hint_temperature: 0.7
+  code_temperature: 0.2
+
+execution:
+  test_timeout_s: 120
+  per_test_timeout_s: 10
+
+random:
+  seed: 42
